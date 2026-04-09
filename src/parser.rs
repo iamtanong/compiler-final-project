@@ -1,8 +1,9 @@
 use crate::codegen::CodeGen;
-/// Parser for Retro BASIC using tokens
-/// Parses tokens and generates B-code
 use crate::lexer::Token;
 
+/// Parser for Retro BASIC using tokens
+///
+/// Parses tokens and generates B-code
 pub struct Parser {
     tokens: Vec<Token>,
     pos: usize,

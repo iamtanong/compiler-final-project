@@ -2,6 +2,14 @@
 name = "final-project"
 version = "0.1.0"
 edition = "2021"
+authors = ["iamtanong"]
+repository = "https://github.com/iamtanong/compiler-final-project"
+
+[package.metadata.wix]
+upgrade-guid = "AF838489-494D-44E6-967A-0452D032476A"
+path-guid = "2CD4D5EA-54C8-41B2-9133-79E87D17E67C"
+license = false
+eula = false
 
 [[bin]]
 name = "retro_basic_compiler"
@@ -9,3 +17,8 @@ path = "src/main.rs"
 
 [dependencies]
 nom = "7"
+
+# The profile that 'dist' will build with
+[profile.dist]
+inherits = "release"
+lto = "thin"
