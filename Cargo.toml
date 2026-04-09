@@ -1,0 +1,11 @@
+[package]
+name = "final-project"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "retro_basic_compiler"
+path = "src/main.rs"
+
+[dependencies]
+nom = "7"
